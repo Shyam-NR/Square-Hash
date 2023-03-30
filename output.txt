@@ -1,0 +1,7 @@
+---------------MMH-MAC---------------
+MAC: 0
+Execution Time: 1565nanoseconds
+
+---------------SQH-MAC---------------
+MAC: 0
+Execution Time: 1321nanoseconds
