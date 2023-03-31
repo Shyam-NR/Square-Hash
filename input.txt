@@ -1,2 +1,2 @@
-This-is-a-secret-key-that-is-128-characters-loooooooooooooooooooooooooooooooooooooooooooooooooooooxxxxxooooooooonnnnnnnnnnnnnngg
+This-is-a-public-key-that-is-128-characters-loooooooooooooooooooooooooooooooooooooooooooooooooooooxxxxxooooooooonnnnnnnnnnnnnngg
 Lorem-ipsum-dolor-sit-amet-consectetur-adipisicing-elit.-Necessitatibus-reiciendis-repudiandae-eius-eligendi-rem-quis,-itaque-re

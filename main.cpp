@@ -34,7 +34,7 @@ int main()
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "a", stdout);
     
-    cout << "*********************************\n";
+    cout << "\n*********************************\n";
 
     string key_string, msg_string;
     cin >> key_string >> msg_string;
@@ -67,7 +67,7 @@ int main()
     cout << "MAC: " << hex << mmh_mac << dec << "\n";
     cout << "Execution Time: " << mmh_duration.count() << " nanoseconds\n";
 
-    cout << "\n";
+    // cout << "\n";
     cout << "---------------SQH-MAC---------------\n";
     cout << "MAC: " << hex << sqh_mac << dec << "\n";
     cout << "Execution Time: " << sqh_duration.count() << " nanoseconds\n";

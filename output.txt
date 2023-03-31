@@ -1,23 +1,31 @@
----------------MMH-MAC---------------
-MAC: 268e4ebe
-Execution Time: 708 nanoseconds
-
----------------SQH-MAC---------------
-MAC: ff4dcb5d
-Execution Time: 917 nanoseconds
-*********************************
----------------MMH-MAC---------------
-MAC: 90122332
-Execution Time: 596 nanoseconds
-
----------------SQH-MAC---------------
-MAC: b4dcb5d
-Execution Time: 700 nanoseconds
 *********************************
 ---------------MMH-MAC---------------
 MAC: ea5d7a50
-Execution Time: 1233 nanoseconds
-
+Execution Time: 1080 nanoseconds
 ---------------SQH-MAC---------------
 MAC: ba4260a6
-Execution Time: 1392 nanoseconds
+Execution Time: 462 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MAC: e0242200
+Execution Time: 543 nanoseconds
+---------------SQH-MAC---------------
+MAC: 562c58e1
+Execution Time: 196 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MAC: e0242200
+Execution Time: 996 nanoseconds
+---------------SQH-MAC---------------
+MAC: 562c58e1
+Execution Time: 430 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MAC: e0242200
+Execution Time: 907 nanoseconds
+---------------SQH-MAC---------------
+MAC: 562c58e1
+Execution Time: 349 nanoseconds
