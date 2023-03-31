@@ -1,7 +1,23 @@
 ---------------MMH-MAC---------------
-MAC: 0
-Execution Time: 1565nanoseconds
+MAC: 268e4ebe
+Execution Time: 708 nanoseconds
 
 ---------------SQH-MAC---------------
-MAC: 0
-Execution Time: 1321nanoseconds
+MAC: ff4dcb5d
+Execution Time: 917 nanoseconds
+*********************************
+---------------MMH-MAC---------------
+MAC: 90122332
+Execution Time: 596 nanoseconds
+
+---------------SQH-MAC---------------
+MAC: b4dcb5d
+Execution Time: 700 nanoseconds
+*********************************
+---------------MMH-MAC---------------
+MAC: ea5d7a50
+Execution Time: 1233 nanoseconds
+
+---------------SQH-MAC---------------
+MAC: ba4260a6
+Execution Time: 1392 nanoseconds
