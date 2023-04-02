@@ -1,0 +1,120 @@
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: a29f7d2
+Execution Time: 507 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: cca29efb
+Execution Time: 243 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 660f5bad
+Execution Time: 201 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: 954bb3e2
+Execution Time: 144 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 332c2333
+Execution Time: 232 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: e9ec984
+Execution Time: 150 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 3ea9e242
+Execution Time: 219 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: 43635afc
+Execution Time: 152 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: a6be1020
+Execution Time: 185 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: a899b39a
+Execution Time: 123 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: f74d7dc
+Execution Time: 185 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: f34a0d24
+Execution Time: 123 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 204ee905
+Execution Time: 169 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: 32a66557
+Execution Time: 127 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 1dffef5
+Execution Time: 164 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: 6e9a1481
+Execution Time: 122 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 21b4d0d8
+Execution Time: 175 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: d1359047
+Execution Time: 117 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 74e40d36
+Execution Time: 169 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: b80fc50e
+Execution Time: 120 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: edb18d29
+Execution Time: 170 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: d159378c
+Execution Time: 121 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: f6093ae6
+Execution Time: 169 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: a16fd1fa
+Execution Time: 125 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: c9472508
+Execution Time: 171 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: 8d05e26
+Execution Time: 121 nanoseconds
+
+*********************************
+---------------MMH-MAC---------------
+MMH-MAC: 99bf6ea8
+Execution Time: 170 nanoseconds
+---------------SQH-MAC---------------
+SQH-MAC: 9c3c71d
+Execution Time: 123 nanoseconds
+
+*********************************
+
+*********************************
+Average MMH execution time: 206.143
+Average SQH execution time: 136.5
+
+# Apr 2 13:29 ! Do Not over write 

@@ -37,14 +37,18 @@ int main()
     int T;
     cin >> T;
     double mmh_avg(0), sqh_avg(0);
+
+    cout << " +----+------------+----------+------------+----------+ \n";
+    cout << " | SL |  MMH--MAC  | Time(ns) |  SQH--MAC  | Time(ns) | \n";
+    cout << " +----+------------+----------+------------+----------+ \n";
+
     for(int t=1; t<=T; ++t)
     {
-        cout << "\n*********************************\n";
+        // cout << "\n*********************************\n";
 
         string key_string, msg_string;
         cin >> key_string >> msg_string;
 
-        // cout << key_string << "\n" << msg_string << endl;
 
         vector<unsigned long> key(32), msg(32);
         unsigned long base = 1 << 8; // The size of an ASCII character
@@ -69,27 +73,36 @@ int main()
         auto sqh_duration = duration_cast<nanoseconds>(stop_sqh - start_sqh);
 
         // Printing outputs and results
-        cout << "---------------MMH-MAC---------------\n";
-        cout << "MMH-MAC: " << hex << mmh_mac << dec << "\n";
-        cout << "Execution Time: " << mmh_duration.count() << " nanoseconds\n";
+        cout << " | " << setw(2) << t ;
+        cout << " | " << setw(10) << hex << mmh_mac << dec ;
+        cout << " | " << setw(8) << mmh_duration.count() ;
+        // cout << "---------------MMH-MAC---------------\n";
+        // cout << "MMH-MAC: " << hex << mmh_mac << dec << "\n";
+        // cout << "Execution Time: " << mmh_duration.count() << " nanoseconds\n";
 
         // cout << "\n";
-        cout << "---------------SQH-MAC---------------\n";
-        cout << "SQH-MAC: " << hex << sqh_mac << dec << "\n";
-        cout << "Execution Time: " << sqh_duration.count() << " nanoseconds\n";
+        cout << " | " << setw(10) << hex << sqh_mac << dec ;
+        cout << " | " << setw(8) << sqh_duration.count() ;
+        cout << " | " << endl;
+        // cout << "---------------SQH-MAC---------------\n";
+        // cout << "SQH-MAC: " << hex << sqh_mac << dec << "\n";
+        // cout << "Execution Time: " << sqh_duration.count() << " nanoseconds\n";
 
         mmh_avg += mmh_duration.count();
         sqh_avg += sqh_duration.count();
+
+        cout << " +----+------------+----------+------------+----------+ \n";
     }
 
     mmh_avg /= T;
     sqh_avg /= T;
 
-    cout << "\n*********************************\n";
-    cout << "\n*********************************\n";
+    // cout << "\n*********************************\n";
+    // cout << "\n*********************************\n";
+    cout << "\n\n";
 
-    cout << "Average MMH execution time: " << mmh_avg << endl;
-    cout << "Average SQH execution time: " << sqh_avg << endl;
+    cout << "Average MMH execution time: " << mmh_avg << " nanoseconds" << endl;
+    cout << "Average SQH execution time: " << sqh_avg << " nanoseconds" << endl;
 
     return 0;
 }
