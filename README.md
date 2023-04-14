@@ -31,3 +31,5 @@ g++ -O3 -w main.cpp -o main.out
 ```
 ./main.out
 ```
+
+## Randomness Analysis of The Square hash 
