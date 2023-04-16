@@ -27,34 +27,34 @@ double frequency_test_monobit(unsigned long hash)
 
 }
 
-double frequency_test_block(unsigned long hash, int M)
-{
-    int g = n/M;
-    unsigned long mask = (1 << n%M);
-    vector<double> pi(g);
-    for(int i=0; i<g; i++)
-    {
-        double pi_i = 0;
-        for(int j=0; j<M; j++, mask <<= 1)
-        {
-            pi_i += ((hash & mask) ? 1 : -1 );
-        }
-        pi[i] = pi_i / M ;
-    }
+// double frequency_test_block(unsigned long hash, int M)
+// {
+//     int g = n/M;
+//     unsigned long mask = (1 << n%M);
+//     vector<double> pi(g);
+//     for(int i=0; i<g; i++)
+//     {
+//         double pi_i = 0;
+//         for(int j=0; j<M; j++, mask <<= 1)
+//         {
+//             pi_i += ((hash & mask) ? 1 : -1 );
+//         }
+//         pi[i] = pi_i / M ;
+//     }
 
-    // compute X^2_(obs)
-    double XX_obs = 0;
-    for(int i=0; i<g; i++)
-    {
-        XX_obs += (pi[i] - 0.5) * (pi[i] - 0.5) ;
-    } 
-    XX_obs *= 4 * M;
+//     // compute X^2_(obs)
+//     double XX_obs = 0;
+//     for(int i=0; i<g; i++)
+//     {
+//         XX_obs += (pi[i] - 0.5) * (pi[i] - 0.5) ;
+//     } 
+//     XX_obs *= 4 * M;
 
-    double p_value = 0.2; // SHOULD CHANGE ASAP - learn to include cephes library
+//     double p_value = 0.2; // SHOULD CHANGE ASAP - learn to include cephes library
 
-    return p_value;
+//     return p_value;
 
-}
+// }
 
 double run_test(unsigned long hash)
 {

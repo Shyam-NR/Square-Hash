@@ -1,0 +1,22 @@
+TEST CASE #1:
+Frequency Test results: -- 
+	MMH - 0.486228756166
+	SQH - 0.512776028241
+Runs Test results: -- 
+	MMH - 0.486362380555
+	SQH - 0.510305828112
+Avalanche Test results: -- 
+	MMH - 50.7551783659
+	SQH - 43.3112773303
+
+TEST CASE #2:
+Frequency Test results: -- 
+	MMH - 0.480689132739
+	SQH - 0.465187460562
+Runs Test results: -- 
+	MMH - 0.485854674592
+	SQH - 0.477821942298
+Avalanche Test results: -- 
+	MMH - 49.78783084
+	SQH - 43.7428078251
+
