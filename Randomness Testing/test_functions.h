@@ -62,7 +62,7 @@ double run_test(unsigned long hash)
     double pi = (double) __builtin_popcount(hash) / n;
     double tow = (double) 2 / sqrt(n);
     if(abs(pi - 0.5) >= tow)
-        return -1; // run test would not pass since frequency test did not pass
+        return 0; // run test would not pass since frequency test did not pass
     double V_obs = 0;
     unsigned long temp = hash;
 
@@ -87,6 +87,7 @@ double run_test(unsigned long hash)
 
 double avalanche_test(unsigned long hash, unsigned long hash_)
 {
+    // in here we find out the percentage hamming distance between hash and hash_
     unsigned long mask = 1;
     int dif = 0;
     for(int i=0; i<n; ++i, mask <<= 1)

@@ -27,7 +27,6 @@ int main()
 
     for(int t=1; t<=T; ++t)
     {
-        // cout << "\n*********************************\n";
 
         string key_string, msg_string;
         cin >> key_string >> msg_string;
@@ -56,20 +55,17 @@ int main()
         auto sqh_duration = duration_cast<nanoseconds>(stop_sqh - start_sqh);
 
         // Printing outputs and results
+        // for terminal
         cout << " | " << setw(2) << t ;
         cout << " | " << setw(10) << hex << mmh_mac << dec ;
         cout << " | " << setw(8) << mmh_duration.count() ;
-        // cout << "---------------MMH-MAC---------------\n";
-        // cout << "MMH-MAC: " << hex << mmh_mac << dec << "\n";
-        // cout << "Execution Time: " << mmh_duration.count() << " nanoseconds\n";
 
-        // cout << "\n";
         cout << " | " << setw(10) << hex << sqh_mac << dec ;
         cout << " | " << setw(8) << sqh_duration.count() ;
         cout << " | " << endl;
-        // cout << "---------------SQH-MAC---------------\n";
-        // cout << "SQH-MAC: " << hex << sqh_mac << dec << "\n";
-        // cout << "Execution Time: " << sqh_duration.count() << " nanoseconds\n";
+
+        // printing to include in latex table
+        // cout << t << " & " << hex << mmh_mac << dec << " & " << mmh_duration.count() << " & " << hex << sqh_mac << dec << " & " << sqh_duration.count() << " \\\\ " << endl << "\\hline" << endl;
 
         mmh_avg += mmh_duration.count();
         sqh_avg += sqh_duration.count();
@@ -80,8 +76,6 @@ int main()
     mmh_avg /= T;
     sqh_avg /= T;
 
-    // cout << "\n*********************************\n";
-    // cout << "\n*********************************\n";
     cout << "\n\n";
 
     cout << "Average MMH execution time: " << mmh_avg << " nanoseconds" << endl;

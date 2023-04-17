@@ -13,7 +13,14 @@ def test_series(m, k) :
     series = []
     for i in range(len(m)):
         if(i+k >= len(m)) : break
-        series.append(m[:i] + ''.join(random.choices(string.ascii_letters + string.digits + string.punctuation.replace('\\', ''), k=k))
+        # rand_string = ''.join(random.choices(string.ascii_letters 
+        #                                      + string.digits 
+        #                                      + string.punctuation.replace('\\', ''), 
+        #                                     k=k))
+        rand_string = ''.join(random.choices(string.ascii_letters 
+                                             + string.digits, 
+                                            k=k))
+        series.append(m[:i] + rand_string
                     + m[i+k:])
     return series
 
@@ -36,6 +43,11 @@ Test produces p-values depending on the number of ones in a binary sequence, \
 where Overlapping Template Test evaluates the number of occurrences of a specific \
 sequence of bits"
 
+# k = ''.join(random.choices(string.ascii_letters 
+#                                      + string.digits 
+#                                      + string.punctuation.replace('\\', ''), 
+#                                     k=300))
+
 k = format(k)
 k1 = k[0:128]
 k2 = k[128:256]
@@ -51,12 +63,18 @@ designed based on certain cryptographic properties of block ciphers and hash fun
 to evaluate their randomness. The package is applied to the AES finalists, and produced \
 more precise results than those obtained in similar applications."
 
+# m = ''.join(random.choices(string.ascii_letters 
+#                                      + string.digits 
+#                                      + string.punctuation.replace('\\', ''), 
+#                                     k=300))
 
 m = format(m)
 m1 = m[0:128]
 m2 = m[128:256]
 
 test_cases = 2
+f.write(str(test_cases) + '\n')
+
 f.write(k1 + '\n')
 # print("Test message 1 ---")
 ser1 = generate_test_series(m1)
